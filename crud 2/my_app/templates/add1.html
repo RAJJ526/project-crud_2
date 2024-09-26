@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add new employees</h1>
+
+
+
+    <form action="/raj/save1">
+        
+        <label for="">Name</label>
+        <input type="text" name="name" placeholder=""><br>
+        <h6 style="color: red;">{{error.errors.name}}</h6>
+
+        <label for="">Age</label>
+        <input type="number" name="age" placeholder=""><br>
+        <h6 style="color: red;">{{error.errors.age}}</h6>
+
+        <label for="">Role</label>
+        <input type="text" name="role" placeholder=""><br>
+        <h6 style="color: red;">{{error.errors.role}}</h6>
+
+        <label for="">Salary</label>
+        <input type="number" name="salary" placeholder=""><br>
+        <h6 style="color: red;">{{error.errors.salary}}</h6>
+
+        <button type="submit">save1</button>
+
+    </form>
+
+
+</body>
+</html>

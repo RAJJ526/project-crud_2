@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>add new car</h1>
+
+
+
+    <form action="/update/{{obj.id}}">
+        
+        <label for="">brand</label>
+        <input type="text" name="brand" placeholder="{{obj.brand}}" value="{{obj.brand}}"><br>
+        <h6 style="color: red;">{{error.errors.brand}}</h6>
+
+        <label for="">modal</label>
+        <input type="text" name="modal" placeholder="{{obj.brand}}" value="{{obj.modal}}"><br>
+        <h6 style="color: red;">{{error.errors.modal}}</h6>
+
+        <label for="">show room price</label>
+        <input type="text" name="showroom_price" placeholder="" value="{{obj.showroom_price}}"><br>
+        <h6 style="color: red;">{{error.errors.showroom_price}}</h6>
+
+        <label for="">on road price</label>
+        <input type="text" name="on_road_price" placeholder="" value="{{obj.on_road_price}}"><br>
+        <h6 style="color: red;">{{error.errors.on_road_price}}</h6>
+
+        <button type="submit">update</button>
+
+    </form>
+
+
+</body>
+</html>

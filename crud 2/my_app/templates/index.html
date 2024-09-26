@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Company data</h1>
+    <table >
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Role</th>
+                <th>Salary </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in obj %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.age}}</td>
+                <td>{{i.role}}</td>
+                <td>{{i.salary}}</td>
+                <td><a href="/raj/delete1/{{i.id}}">delete</a></td>
+                <td><a href="/raj/edit1/{{i.id}}">edit1</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+<a href="/raj/add1">if you want to add new cal than click here</a>
+</body>
+</html>

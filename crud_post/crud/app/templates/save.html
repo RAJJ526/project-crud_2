@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>add new car</h1>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="">Name</label>
+        <input type="text" name="name" placeholder=""><br>
+        <h6 style="color: red;">{{error.errors.name}}</h6>
+
+        <label for="">last</label>
+        <input type="text" name="last" placeholder=""><br>
+        <h6 style="color: red;">{{error.errors.last}}</h6>
+
+
+
+        <button type="submit">save</button>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>all cars data is in table </h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>brand</th>
+                <th>modal</th>
+                <th>showroom price</th>
+                <th>on road price </th>
+                <th>Delete</th>
+                <th>update</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in obj %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.brand}}</td>
+                <td>{{i.modal}}</td>
+                <td>{{i.showroom_price}}</td>
+                <td>{{i.on_road_price}}  </td>
+                <td><a href="/delete/{{i.id}}">delete</a></td>
+                <td><a href="/edit/{{i.id}}">edit</a></td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+
+<a href="/add">if you want to add new cal than click here</a>
+
+
+</body>
+</html>

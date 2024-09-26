@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>all cars data is in table </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>last</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in obj %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.last}}</td>
+                <td><a href="/delete2/{{i.id}}">Delete</a></td>
+                <td><a href="/update2/{{i.id}}">Update</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+
+<a href="/save">if you want to add new cal than click here</a>
+
+
+</body>
+</html>

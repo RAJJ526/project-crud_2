@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>all cars data is in table </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Model</th>
+                <th>Company Price</th>
+                <th>Maximum price </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in obj %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.modal}}</td>
+                <td>{{i.company_price}}</td>
+                <td>{{i.max_price}}  </td>
+                <td><a href="/delta/delete2/{{i.id}}">Delete</a></td>
+                <td><a href="/delta/update2/{{i.id}}">Update</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+
+<a href="/delta/add2">if you want to add new cal than click here</a>
+
+
+</body>
+</html>
